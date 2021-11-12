@@ -2192,10 +2192,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fab08f6f60d3df94bb59f6041ec00666, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Story: {fileID: 553425623}
-  Quests1: {fileID: 753880406}
-  Quests2: {fileID: 65504081}
-  Quests3: {fileID: 1810879482}
 --- !u!114 &1573114779
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2205,7 +2201,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1573114773}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d9e467fa1ee98b4386b9428f731adcb, type: 3}
+  m_Script: {fileID: 11500000, guid: a73189c05b12c8240a19b4aea86a9d7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1687252457
