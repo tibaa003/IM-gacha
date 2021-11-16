@@ -7,11 +7,12 @@ public class Gacha : MonoBehaviour
     public static bool multi;
 
     void Start(){
+        //Animation
         if(!multi){
-            //srimon gacha moment
+            //Create one object
         } else{
-            for(int i = 0; i < 9; i++){
-                //srimon moment
+            for(int i = 0; i < 10; i++){
+                //create 10 objects
             }
         }
     }
