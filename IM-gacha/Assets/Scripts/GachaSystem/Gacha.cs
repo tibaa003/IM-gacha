@@ -10,32 +10,26 @@ public class Gacha : MonoBehaviour
 
     public int[] table =
      {
-        60, //3 star i %
         30, //4 star
-        10  //5 star
+        10, //5 star
+        60
     };
     public int total;
     public int randomNumber;
     public int rn;
-    public string drop;
+    private int currentPull = 0;
+    public Sprite drop;
     static int random;
-    public string[] Fstar = {
-        "Titas VG2",
-        "Srimon VG2",
-        "Tias VG2",
-        "PederVG2",
-        "Ali VG2"
-    };
     public GameObject singleIcon;
 
-    public Sprite peder;
+    public GameObject[] multiIcons;
 
-    public int latestPull;
-    public string[] pulled;
-
+    public List<Sprite> star3 = new List<Sprite>();
+    public List<Sprite> star4 = new List<Sprite>();
+    public List<Sprite> star5 = new List<Sprite>();
     void Start()
     {
-        //Animation
+        //Animatio
         if (!multi)
         {
             total = 0;
@@ -52,7 +46,7 @@ public class Gacha : MonoBehaviour
                 if (randomNumber <= table[i])
                 {
                     character(table[i]);
-                    return;
+                    break;
                 }
                 else
                 {
@@ -79,13 +73,12 @@ public class Gacha : MonoBehaviour
                     if (randomNumber <= table[j])
                     {
                         character(table[j]);
-                        return;
+                        break;
                     }
                     else
                     {
                         randomNumber -= table[j];
                     }
-
                 }
             }
 
@@ -95,22 +88,36 @@ public class Gacha : MonoBehaviour
     {
         if (rating == 10)
         {
-
+            random = UnityEngine.Random.Range(0, star5.Count);
+            drop = star5[random];
+            Debug.Log(drop);
         }
         else if (rating == 30)
         {
-            random = UnityEngine.Random.Range(0, Fstar.Length);
-            drop = Fstar[random];
+            random = UnityEngine.Random.Range(0, star4.Count);
+            drop = star4[random];
+            Debug.Log(drop);
+        } else if (rating == 60){
+            random = UnityEngine.Random.Range(0, star3.Count);
+            drop = star3[random];
             Debug.Log(drop);
         }
-        else { }
-        Array.Resize<string>(ref pulled, pulled.Length + 1);
-        pulled[latestPull] = drop;
-        createBox();
+        createBox(drop);
     }
-    public void createBox(){
-        singleIcon.SetActive(true);
-        singleIcon.GetComponent<Image>().sprite = peder;
+    public void createBox(Sprite e)
+    {
+        if (!multi)
+        {
+            singleIcon.SetActive(true);
+            singleIcon.GetComponent<Image>().sprite = e;
+        }
+        else
+        {
+            multiIcons[currentPull].SetActive(true);
+            multiIcons[currentPull].GetComponent<Image>().sprite = e;
+            currentPull++;
+        }
+
     }
 }
 
