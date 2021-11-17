@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-public class Summon : MonoBehaviour
+public class MultiSummon : MonoBehaviour
 {
     public void summon(bool multiple)
     {
