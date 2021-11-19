@@ -8,5 +8,4 @@ public class MultiSummon : MonoBehaviour
         SceneLoader.LoadScene("Summon");
         Gacha.multi = multiple;
     }
-
 }

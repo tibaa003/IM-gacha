@@ -1468,6 +1468,8 @@ MonoBehaviour:
   - {fileID: 856300952}
   - {fileID: 1112561551}
   - {fileID: 263010818}
+  star3:
+  - {fileID: 21300000, guid: 119467d2e0dac0e4a8da1b4b8a2bcfe7, type: 3}
   star4:
   - {fileID: 21300000, guid: 03a5cb3e17691ef42b438b3f7c06e5dc, type: 3}
   - {fileID: 21300000, guid: 449110eaf5a4c404bbf77325fcf71335, type: 3}
@@ -1480,13 +1482,11 @@ MonoBehaviour:
   - {fileID: 21300000, guid: c92e6e49421d0bf4e9e915cd928368bb, type: 3}
   - {fileID: 21300000, guid: 0f6836276bfe43548826f4f9c9341727, type: 3}
   - {fileID: 21300000, guid: bda6b79c7de6f854a957734b4f2f6ff9, type: 3}
-  - {fileID: 21300000, guid: 8d8fad79333c598489ba98ef7b67eba2, type: 3}
   - {fileID: 21300000, guid: d2dd08eb37c964b44afc385f261f160b, type: 3}
   - {fileID: 21300000, guid: 0cf50efb698966346bdca1b9baa8f739, type: 3}
   - {fileID: 21300000, guid: e27f4da7b358d8c45ac84c54c105f099, type: 3}
   star5:
   - {fileID: 21300000, guid: e2dd3b28f81c35749ad6273db143d385, type: 3}
-  pulled: []
 --- !u!114 &1432687977
 MonoBehaviour:
   m_ObjectHideFlags: 0

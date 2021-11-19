@@ -205,7 +205,7 @@ SpriteRenderer:
   m_Size: {x: 0.256, y: 0.256}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1001 &202087418
@@ -921,7 +921,7 @@ SpriteRenderer:
   m_Size: {x: 0.256, y: 0.256}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &553425625
@@ -1378,7 +1378,7 @@ SpriteRenderer:
   m_Size: {x: 0.256, y: 0.256}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &753880408
@@ -1514,6 +1514,30 @@ PrefabInstance:
     - target: {fileID: 7146937172621045345, guid: c9ba89c375da42a4aa5b9fc588c0d4bb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7146937172621045374, guid: c9ba89c375da42a4aa5b9fc588c0d4bb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7146937172621045374, guid: c9ba89c375da42a4aa5b9fc588c0d4bb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1573114780}
+    - target: {fileID: 7146937172621045374, guid: c9ba89c375da42a4aa5b9fc588c0d4bb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 7146937172621045374, guid: c9ba89c375da42a4aa5b9fc588c0d4bb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: selectQuest, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7146937172621045374, guid: c9ba89c375da42a4aa5b9fc588c0d4bb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 7146937172621045374, guid: c9ba89c375da42a4aa5b9fc588c0d4bb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: 1.1
       objectReference: {fileID: 0}
     - target: {fileID: 7146937173706803270, guid: c9ba89c375da42a4aa5b9fc588c0d4bb, type: 3}
       propertyPath: m_text
@@ -2088,6 +2112,7 @@ GameObject:
   - component: {fileID: 1573114774}
   - component: {fileID: 1573114778}
   - component: {fileID: 1573114779}
+  - component: {fileID: 1573114780}
   m_Layer: 5
   m_Name: QuestMenu
   m_TagString: Untagged
@@ -2204,6 +2229,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d9e467fa1ee98b4386b9428f731adcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1573114780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1573114773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 976ba4c7c3ae0fc46b2fe7d6c34605e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1687252457
 GameObject:
   m_ObjectHideFlags: 0
@@ -2286,7 +2323,7 @@ SpriteRenderer:
   m_Size: {x: 0.256, y: 0.256}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1810879482
@@ -2371,7 +2408,7 @@ SpriteRenderer:
   m_Size: {x: 0.256, y: 0.256}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1001 &1948802621
