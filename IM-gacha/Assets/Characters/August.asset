@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9076b6a505ef7274ca556acace37db6e, type: 3}
+  m_Name: August
+  m_EditorClassIdentifier: 
+  id: 0
+  name: August
+  atk: 34
+  hp: 7853
+  def: 23
+  img: {fileID: 21300000, guid: 7a1bbb5caf4a2e24bbcca07ec8d47b39, type: 3}

@@ -18,15 +18,21 @@ public class Gacha : MonoBehaviour
     public int randomNumber;
     public int rn;
     private int currentPull = 0;
-    public Sprite drop;
+    public charStat drop;
     static int random;
     public GameObject singleIcon;
+    public GameObject singleBorder;
 
     public GameObject[] multiIcons;
+    public GameObject[] multiBorders;
+    public Sprite starborder3;
+    public Sprite starborder4;
+    public Sprite starborder5;
 
-    public List<Sprite> star3 = new List<Sprite>();
-    public List<Sprite> star4 = new List<Sprite>();
-    public List<Sprite> star5 = new List<Sprite>();
+    public List<charStat> star3 = new List<charStat>();
+    public List<charStat> star4 = new List<charStat>();
+    public List<charStat> star5 = new List<charStat>();
+    public List<charStat> pulled = new List<charStat>();
     void Start()
     {
         //Animatio
@@ -90,34 +96,68 @@ public class Gacha : MonoBehaviour
         {
             random = UnityEngine.Random.Range(0, star5.Count);
             drop = star5[random];
-            Debug.Log(drop);
+            if (!multi)
+            {
+                singleBorder.SetActive(true);
+                singleBorder.GetComponent<Image>().sprite = starborder5;
+            }
+            else
+            {
+                multiBorders[currentPull].SetActive(true);
+                multiBorders[currentPull].GetComponent<Image>().sprite = starborder5;
+            }
         }
         else if (rating == 30)
         {
             random = UnityEngine.Random.Range(0, star4.Count);
             drop = star4[random];
-            Debug.Log(drop);
-        } else if (rating == 60){
+            if (!multi)
+            {
+                singleBorder.SetActive(true);
+                singleBorder.GetComponent<Image>().sprite = starborder4;
+            }
+            else
+            {
+                multiBorders[currentPull].SetActive(true);
+                multiBorders[currentPull].GetComponent<Image>().sprite = starborder4;
+            }
+        }
+        else if (rating == 60)
+        {
             random = UnityEngine.Random.Range(0, star3.Count);
             drop = star3[random];
-            Debug.Log(drop);
+            if (!multi)
+            {
+                singleBorder.SetActive(true);
+                singleBorder.GetComponent<Image>().sprite = starborder3;
+            }
+            else
+            {
+                multiBorders[currentPull].SetActive(true);
+                multiBorders[currentPull].GetComponent<Image>().sprite = starborder3;
+            }
         }
         createBox(drop);
+        // SaveSystem.SaveChar(drop);
     }
-    public void createBox(Sprite e)
+    public void createBox(charStat e)
     {
         if (!multi)
         {
             singleIcon.SetActive(true);
-            singleIcon.GetComponent<Image>().sprite = e;
+            singleIcon.GetComponent<Image>().sprite = e.img;
         }
         else
         {
             multiIcons[currentPull].SetActive(true);
-            multiIcons[currentPull].GetComponent<Image>().sprite = e;
+            multiIcons[currentPull].GetComponent<Image>().sprite = e.img;
             currentPull++;
         }
-
     }
+
+
+    //Lagt til fra random ass video
 }
+
+
 

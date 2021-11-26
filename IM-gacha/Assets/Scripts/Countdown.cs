@@ -3,7 +3,7 @@ using UnityEngine;
 public class Countdown : MonoBehaviour
 {
 	private Bar _timeBar;
-	private float _maxTime = 60;
+	public float _maxTime = 60;
 	private float _curTime;
 	public bool running;
 	public float multiplier = 1;
