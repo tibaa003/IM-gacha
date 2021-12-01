@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SettingsMenu.unity
     guid: 5fd10b988778bc44da7c851ef9f71ddf
+  - enabled: 1
+    path: Assets/Scenes/SummonScene.unity
+    guid: 01ef5531e8816444993480c1d97b6c76
+  - enabled: 1
+    path: Assets/Scenes/Summon.unity
+    guid: 360cb1ca543cdb649b25ac3efbcb7256
   m_configObjects: {}
