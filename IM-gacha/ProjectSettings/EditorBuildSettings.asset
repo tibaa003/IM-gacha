@@ -20,4 +20,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Summon.unity
     guid: 360cb1ca543cdb649b25ac3efbcb7256
+  - enabled: 1
+    path: Assets/Scenes/QuestScenes/1.1.unity
+    guid: c2f14d090589b4f43bdb4227e4160793
+  - enabled: 1
+    path: Assets/Scenes/QuestScenes/teamSetup.unity
+    guid: 2a71779679dccef44be2eba7f9fd9b11
+  - enabled: 1
+    path: Assets/Scenes/Characters.unity
+    guid: 75d94a17426c9f844841d5c0509c0e64
   m_configObjects: {}
