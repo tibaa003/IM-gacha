@@ -502,9 +502,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69b08af8412972f4ebe3a28b50637bc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  banner1: {fileID: 743411231}
-  banner2: {fileID: 1137973341}
-  banner3: {fileID: 1001452597}
+  banners:
+  - {fileID: 743411231}
+  - {fileID: 1137973341}
+  - {fileID: 1001452597}
 --- !u!114 &492341767
 MonoBehaviour:
   m_ObjectHideFlags: 0
